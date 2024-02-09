@@ -1,0 +1,46 @@
+<%-include("header")%>
+<html>
+    <body>
+        <div>
+            <div class="question">
+                <h1><%=message.question%></h1>
+            </div>
+            <div class="optionDiv">
+                <p class="option" id="option1"><a href="/user/question"><%=message.Answer[0]%></a></p>
+                <p class="option" id="option2"><a href="/user/question"><%=message.Answer[1]%></a></p>
+                <p class="option" id="option3"><a href="/user/question"><%=message.Answer[2]%></a></p>
+                <p class="option" id="option4"><a href="/user/question"><%=message.Answer[3]%></a></p>
+            </div>
+
+            <button id="submitbtn"><a href="/user/question">Next</a></button>
+
+            <%if (vissible >= 4) {%> 
+                <button id="submitbtn"><a href="/user/question">Submit</a></button>
+            <%}%>
+        </div>
+
+        <script>
+            document.getElementById("option1").onclick = function() {
+                console.log("click")
+            }
+
+            document.getElementById("option1").onclick = function() {
+                console.log("click")
+            }
+
+            document.getElementById("option2").onclick = function() {
+                console.log("click")
+            }
+
+            document.getElementById("option3").onclick = function() {
+                console.log("click")
+            }
+
+            document.getElementById("option4").onclick = function() {
+                console.log("click")
+            }
+
+        </script>
+
+    </body>
+</html>
